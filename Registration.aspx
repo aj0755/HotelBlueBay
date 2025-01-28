@@ -1,9 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="register-page">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registration Page</title>
+    <link href="content/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="content/JScript.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="register-page">
         <div class="register-container">   
             <!-- Title and Tagline -->
             <h1 class="animate-title">Create Your Account</h1>
@@ -99,5 +106,6 @@
             </div>
         </div>
     </div>
-</asp:Content>
-
+    </form>
+</body>
+</html>

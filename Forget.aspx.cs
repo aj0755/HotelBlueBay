@@ -28,8 +28,8 @@ public partial class Forget : System.Web.UI.Page
         {
             string resetLink = "http://localhost:50714/BlueBayweb/Login.aspx";
 
-            string smtpAddress = "smtp.gmail.com"; 
-            int portNumber = 587; 
+            string smtpAddress = "smtp.gmail.com";
+            int portNumber = 587;
             bool enableSSL = true;
 
             string emailFrom = "stayatbluebay@gmail.com";
