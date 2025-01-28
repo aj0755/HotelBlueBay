@@ -7,7 +7,7 @@
     <div class="profile-header">
       <!-- User Avatar and Name -->
       <div class="avatar-container">
-        <img src="user-avatar.png" alt="User Avatar" class="user-avatar" />
+        <img src="user.png" alt="User Avatar" class="user-avatar" />
         <h2 class="user-name">John Doe</h2>
       </div>
       <div class="user-actions">
