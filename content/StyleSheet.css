@@ -1279,21 +1279,20 @@ a:hover {
     }
 }
 
+/*User info page css*/
 .user-info-container {
-    width: 80%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 100px 110px 10;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Header Section */
 .profile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .avatar-container {
@@ -1302,77 +1301,49 @@ a:hover {
 }
 
 .user-avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 2px solid #ccc;
     margin-right: 15px;
 }
 
 .user-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-/* User Actions */
-.user-actions a {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 10px;
-    transition: background-color 0.3s;
-}
-
-.user-actions a:hover {
-    background-color: #2980b9;
-}
-
-/* Account Information Section */
-.account-info {
-    margin-bottom: 30px;
-}
-
-.account-info h3 {
     font-size: 22px;
-    color: #2c3e50;
-    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .info-item {
-    display: flex;
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
 
 .info-label {
     font-weight: bold;
-    width: 150px;
-    color: #3498db;
+    margin-right: 10px;
 }
 
 .info-value {
-    color: #555;
+    border: none;
     font-size: 16px;
 }
 
-.logout-section {
-    text-align: center;
+.btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 .btn-logout {
-    background-color: #e74c3c;
+    background: red;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
 }
 
-.btn-logout:hover {
-    background-color: #c0392b;
+.btn-save {
+    background: green;
+    color: white;
 }
+
 /* Change Password Page */
 /* Container for the Change Password Page */
 .container {
