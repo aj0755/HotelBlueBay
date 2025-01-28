@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Bluebay</title>
+    <link href="content/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="content/JScript.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<!-- Header Section -->
+<form id="form1" runat="server">
+    <header>
+    <%--// Navaigation bar--%>
+    <nav class="navbar">
+      <div class="logo">Hotel Bluebay</div>
+      <ul class="nav-links">
+        <li><a href="homepage.aspx">Home</a></li>
+        <li><a href="Rooms.aspx">Rooms</a></li>
+        <li><a href="Gallery.aspx">Gallery</a></li>
+        <li><a href="AboutUs.aspx">AboutUs</a></li>
+        <li><a href="ContactUs.aspx">Contact</a></li>
+      </ul>
+      <%--<a href="Login.aspx" class="btn">Login</a>--%>
+       <div class="login">
+            <a id="userActionLink" href="login.aspx">
+                <asp:ImageButton ID="btnUserLogo" runat="server" ImageUrl="~/Logo/User.png" CssClass="user-logo" OnClick="btnUserLogo_Click" />
+            </a>
+        </div>
+    </nav>
+  </header>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-brand">
+            <p>Your Perfect Stay Awaitsts convenient and affordable.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="HomePage.aspx">Home</a></li>
+                <li><a href="AboutUs.aspx">About Us</a></li>
+                <li><a href="Rooms.aspx">Rooms</a></li>
+                <li><a href="ContactUs.aspx">Contact Us</a></li>
+                <li><a href="privacyPolicy.aspx">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> 123 Main Street,Hotel Bluebay Anand, India</p>
+            <p><strong>Email:</strong> <a href="stayatbluebay@gmail.com">stayatbluebay@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+9123456789">+91 234 567 89</a></p>
+        </div>
+
+       <%-- <!-- Newsletter -->
+        <div class="footer-newsletter">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to get the latest deals and updates.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>--%>
+    </div>
+    </footer>
+    </form>
+</body>
+</html>
