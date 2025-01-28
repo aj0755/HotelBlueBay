@@ -3,39 +3,43 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>Hotel Bluebay Gallery</h1>
+   <div class="container">
+        <h2 class="gallery-title">Hotel Gallery</h2>
+        <p class="gallery-description">Explore our luxurious hotel facilities through the images below.</p>
 
-    <!-- Gallery Categories -->
-    <div class="gallery-filters">
-        <button class="filter-btn" onclick="filterGallery('rooms')">Rooms</button>
-        <button class="filter-btn" onclick="filterGallery('amenities')">Amenities</button>
-        <button class="filter-btn" onclick="filterGallery('dining')">Dining</button>
-        <button class="filter-btn" onclick="filterGallery('pool')">Pool</button>
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="Images/room1.jpg" class="lightbox">
+                    <img src="Images/room1.jpg" alt="Room 1" class="gallery-img" />
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Images/room2.jpg" class="lightbox">
+                    <img src="Images/room2.jpg" alt="Room 2" class="gallery-img" />
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Images/amenity1.jpg" class="lightbox">
+                    <img src="Images/amenity1.jpg" alt="Amenity 1" class="gallery-img" />
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Images/restaurant.jpg" class="lightbox">
+                    <img src="Images/restaurant.jpg" alt="Restaurant" class="gallery-img" />
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Images/pool.jpg" class="lightbox">
+                    <img src="Images/pool.jpg" alt="Pool" class="gallery-img" />
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Images/spa.jpg" class="lightbox">
+                    <img src="Images/spa.jpg" alt="Spa" class="gallery-img" />
+                </a>
+            </div>
+        </div>
     </div>
-
-    <!-- Gallery Section -->
-    <section class="gallery-container">
-        <div class="gallery-item rooms">
-            <img src="Images/DeluxeRoom.jpg" alt="Deluxe Room" />
-            <p>Deluxe Room</p>
-        </div>
-        <div class="gallery-item rooms">
-            <img src="Images/ExecutiveRoom.jpg" alt="Executive Suite" />
-            <p>Executive Suite</p>
-        </div>
-        <div class="gallery-item amenities">
-            <img src="Images/Spa.jpg" alt="Spa" />
-            <p>Spa</p>
-        </div>
-        <div class="gallery-item dining">
-            <img src="Images/Dining.jpg" alt="Restaurant" />
-            <p>Dining</p>
-        </div>
-        <div class="gallery-item pool">
-            <img src="Images/swimming-pool.jpg" alt="Swimming Pool" />
-            <p>Swimming Pool</p>
-        </div>
-    </section>
-
 </asp:Content>
 
