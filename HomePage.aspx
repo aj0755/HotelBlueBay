@@ -5,12 +5,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!-- main Section -->
     <section class="hero">
-        <div class="hero-text">
+         <img src="Images/Background.jpg" alt="Hero Image"/>
+          <div class="hero-overlay">
             <h1>Welcome to Hotel Bluebay</h1>
-            <p>Experience the luxury by the seanery.</p>
-            <asp:Button ID="btnBookStay" runat="server" Text="Book Your Stay" 
-                CssClass="cta-button" PostBackUrl="~/Rooms.aspx" onclick="btnBookStay_Click" />
-        </div>
+            <p>Experience the luxury by the scenery.</p>
+            <asp:Button ID="Button1" runat="server" Text="Book Your Stay" 
+                CssClass="cta-button" PostBackUrl="~/Rooms.aspx" />
+          </div>
     </section>
 
     <section class="overview">
@@ -174,4 +175,14 @@
             </div>
         </div>
     </div>
+    <script>
+        // Check if the query string contains login=success
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('login') === 'success') {
+        alertify.set('notifier', 'position', 'top-right');
+            alertify.success('You are successfully logged in!');
+            const newURL = window.location.href.split('?')[0];
+        window.history.replaceState({}, document.title, newURL);
+        }
+    </script>
 </asp:Content>

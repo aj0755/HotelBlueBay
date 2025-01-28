@@ -30,7 +30,7 @@ public partial class Login : System.Web.UI.Page
                 Session["UserEmail"] = txtEmail.Text;
                 lblMessage.Text = "Login successful!";
                 lblMessage.ForeColor = System.Drawing.Color.Green;
-                Response.Redirect("homepage.aspx");
+                Response.Redirect("Homepage.aspx?login=success");
             }
             else
             {
