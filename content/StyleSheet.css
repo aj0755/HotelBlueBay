@@ -1373,3 +1373,103 @@ a:hover {
 .btn-logout:hover {
     background-color: #c0392b;
 }
+/* Change Password Page */
+/* Container for the Change Password Page */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Change Password Form */
+.change-password-container {
+    width: 100%;
+    padding: 25px;
+}
+
+/* Form Heading */
+h2.animate-title {
+    font-size: 28px;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tagline for the form */
+.tagline {
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Form Label Styling */
+.form-label {
+    display: block;
+    color: #2c3e50;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Medium Input Box Styling */
+.input-box {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.input-box:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Button Styling */
+.btn-submit {
+    width: 95%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+/* Error Message Styling */
+.error-message {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+/* Success Message Styling */
+.success-message {
+    font-size: 14px;
+    color: #2ecc71;
+}
+
+/* Additional Style for Buttons and Form Elements */
+input[type="password"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Design: Adjust input size and button for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
