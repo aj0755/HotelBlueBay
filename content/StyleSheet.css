@@ -1377,390 +1377,173 @@ a:hover {
     color: white;
 }
 
-/* Change Password Page */
-/* Container for the Change Password Page */
-.container {
-    width: 50%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
-
-/* Change Password Form */
+/* Change Password css */
 .change-password-container {
-    width: 100%;
-    padding: 25px;
+    width: 40%;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Form Heading */
-h2.animate-title {
+.page-title {
     font-size: 28px;
-    color: #34495e;
-    text-align: center;
+    color: #2c3e50;
     margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Tagline for the form */
-.tagline {
-    text-align: center;
+.page-description {
     font-size: 16px;
     color: #7f8c8d;
     margin-bottom: 30px;
 }
 
-/* Form Label Styling */
-.form-label {
-    display: block;
-    color: #2c3e50;
+.input-label {
     font-size: 14px;
-    margin-bottom: 5px;
-}
-
-/* Medium Input Box Styling */
-.input-box {
-    width: 90%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.input-box:focus {
-    border-color: #3498db;
-    background-color: #ffffff;
-    outline: none;
-}
-
-/* Button Styling */
-.btn-submit {
-    width: 95%;
-    padding: 14px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.btn-submit:hover {
-    background-color: #2980b9;
-}
-
-/* Error Message Styling */
-.error-message {
-    font-size: 14px;
-    color: #e74c3c;
-    margin-bottom: 10px;
-}
-<<<<<<< HEAD
-=======
-/* Change Password Page */
-/* Container for the Change Password Page */
-.container {
-    width: 50%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
-
-/* Change Password Form */
-.change-password-container {
-    width: 100%;
-    padding: 25px;
-}
-
-/* Form Heading */
-h2.animate-title {
-    font-size: 28px;
     color: #34495e;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Tagline for the form */
-.tagline {
-    text-align: center;
-    font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 30px;
-}
-
-/* Form Label Styling */
-.form-label {
+    text-align: left;
+    margin-left: 5px;
     display: block;
-    color: #2c3e50;
-    font-size: 14px;
     margin-bottom: 5px;
 }
 
-/* Medium Input Box Styling */
-.input-box {
+.input-field {
     width: 90%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    padding: 14px;
     font-size: 16px;
-    background-color: #f9f9f9;
-    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
 }
 
-.input-box:focus {
+.input-field:focus {
     border-color: #3498db;
-    background-color: #ffffff;
     outline: none;
 }
 
-/* Button Styling */
-.btn-submit {
-    width: 95%;
-    padding: 14px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.btn-submit:hover {
-    background-color: #2980b9;
-}
-
-/* Error Message Styling */
 .error-message {
-    font-size: 14px;
-    color: #e74c3c;
-    margin-bottom: 10px;
-}
->>>>>>> fbbe728c4068f853ba8eb8fa5137469eb910664c
-
-/* Success Message Styling */
-.success-message {
-    font-size: 14px;
-    color: #2ecc71;
-}
-
-/* Additional Style for Buttons and Form Elements */
-input[type="password"] {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Responsive Design: Adjust input size and button for mobile screens */
-@media (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-<<<<<<< HEAD
-=======
-}
-/*Reset password page*/
-/* Container for the Reset Password Page */
-.container {
-    width: 50%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
-
-/* Reset Password Form */
-.reset-password-container {
-    width: 100%;
-    padding: 25px;
-}
-
-/* Form Heading */
-h2.animate-title {
-    font-size: 28px;
-    color: #34495e;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Tagline for the form */
-.tagline {
-    text-align: center;
-    font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 30px;
-}
-
-/* Form Label Styling */
-.form-label {
-    display: block;
-    color: #2c3e50;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-/* Input Box Styling */
-.input-box {
-    width: 90%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.input-box:focus {
-    border-color: #3498db;
-    background-color: #ffffff;
-    outline: none;
-}
-
-/* Button Styling */
-.btn-submit {
-    width: 90%;
-    padding: 14px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.btn-submit:hover {
-    background-color: #2980b9;
-}
-
-/* Error Message Styling */
-.error-message {
-    font-size: 14px;
-    color: #e74c3c;
-    margin-bottom: 10px;
-}
-
-/* Success Message Styling */
-.success-message {
-    font-size: 14px;
-    color: #2ecc71;
-}
-
-/* Link to Back to Login */
-.back-to-login {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.back-link {
-    color: #3498db;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.back-link:hover {
-    text-decoration: underline;
-}
-
-/* Additional Style for Buttons and Form Elements */
-input[type="password"] {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Responsive Design: Adjust input size and button for mobile screens */
-@media (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-}
-/* Rooms detail page*/
-/* Container for the Room Detail Page */
-.container {
-    width: 70%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-}
-
-/* Room Title */
-.room-title {
-    font-size: 32px;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Room Status Styling */
-.room-status {
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    margin-bottom: 30px;
-}
-
-.room-status.available {
-    color: green;
-    background-color: #ecfdf3;
-}
-
-.room-status.booked {
+    font-size: 12px;
     color: red;
-    background-color: #fce8e6;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 
-/* Room Info Section */
-.room-info {
+.submit-button {
+    width: 100%;
+    padding: 14px;
     font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+.success-message {
+    font-size: 14px;
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .change-password-container {
+        width: 80%;
+    }
+}
+
+/* Resetpassword css*/
+.reset-password-container {
+    width: 40%;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-size: 16px;
+    color: #7f8c8d;
     margin-bottom: 30px;
 }
 
-/* Room Detail Styling */
-.room-detail {
-    margin-bottom: 12px;
+.input-label {
+    font-size: 14px;
+    color: #34495e;
+    text-align: left;
+    margin-left: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.room-detail strong {
-    font-weight: bold;
-    color: #2c3e50;
+.input-field {
+    width: 90%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
 }
 
-/* List of Room Features */
-.room-detail ul {
-    list-style-type: none;
-    padding-left: 0;
+.input-field:focus {
+    border-color: #3498db;
+    outline: none;
 }
 
-.room-detail ul li {
-    margin-bottom: 8px;
-    color: #7f8c8d;
+.error-message {
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 
-/* Button Styling */
-.btn-book-now {
+.success-message {
+    font-size: 14px;
+    color: green;
+}
+
+.submit-button {
     width: 100%;
     padding: 14px;
+    font-size: 16px;
     background-color: #3498db;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-.btn-book-now:hover {
+.submit-button:hover {
     background-color: #2980b9;
 }
+
+@media (max-width: 768px) {
+    .reset-password-container {
+        width: 80%;
+    }
+}
+
 /*payment page*/
 .payment-container {
     display: flex;
@@ -1889,5 +1672,139 @@ strong {
     .container {
         width: 90%;
     }
->>>>>>> fbbe728c4068f853ba8eb8fa5137469eb910664c
+
+}
+/*Room detail page css*/
+.room-details-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Room Title */
+.room-title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Room Description */
+.room-description {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Image Gallery */
+.room-main-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.room-thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.room-thumbnail {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Room Features */
+.room-features {
+    margin-top: 30px;
+}
+
+.room-features .input-label {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.room-features .room-feature {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+/* Pricing & Booking */
+.room-price {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-size: 14px;
+    color: #34495e;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.input-field:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-book-now {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-book-now:hover {
+    background-color: #2980b9;
+}
+
+/* Reviews */
+.reviews-title {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-size: 14px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .room-details-container {
+        width: 90%;
+    }
 }
