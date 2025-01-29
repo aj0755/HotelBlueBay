@@ -21,7 +21,7 @@
             <img src="Images/DeluxeRoom.jpg" alt="Deluxe Room" />
             <h3>Deluxe Room</h3>
             <p>Enjoy spacious comfort with city views, king-sized bed, and a luxurious bathroom and balcony.</p>
-            <p class="price">Rs.3000 per night</p>
+            <p class="price">Rs.3500 per night</p>
             <asp:Button ID="btnDeluxeRoom" runat="server" Text="Book Now" CssClass="cta-button"  />
         </div>
 
@@ -30,7 +30,7 @@
             <img src="Images/ExecutiveRoom.jpg" alt="Executive Suite" />
             <h3>Executive Suite</h3>
             <p>This suite features a private balcony, living area, and top-notch amenities for ultimate relaxation.</p>
-            <p class="price">Rs.2000 per night</p>
+            <p class="price">Rs.2500 per night</p>
             <asp:Button ID="btnExecutiveRoom" runat="server" Text="Book Now" CssClass="cta-button" />
         </div>
 

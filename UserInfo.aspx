@@ -6,7 +6,7 @@
  <div class="user-info-container">
             <div class="profile-header">
                 <div class="avatar-container">
-                    <img src="user.png" alt="User Avatar" class="user-avatar" />
+                    <img src="Logo/user.png" alt="User Avatar" class="user-avatar" />
                     <h2 class="user-name">
                         <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
                     </h2>

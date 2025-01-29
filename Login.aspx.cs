@@ -19,23 +19,48 @@ public partial class Login : System.Web.UI.Page
     {
         try
         {
-            con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM BB_User WHERE Email = '" + txtEmail.Text + "' AND Password = '" + txtPassword.Text + "'");
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            if (sdr.HasRows)
+            string uname = txtEmail.Text;
+            if (uname.StartsWith("AD_"))
             {
-                Session["UserEmail"] = txtEmail.Text;
-                lblMessage.Text = "Login successful!";
-                lblMessage.ForeColor = System.Drawing.Color.Green;
-                Response.Redirect("Homepage.aspx?login=success");
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM BB_Admin WHERE Admin_ID = '" + txtEmail.Text + "' AND Admin_Password = '" + txtPassword.Text + "'");
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                SqlDataReader sdr = cmd.ExecuteReader();
+
+                if (sdr.HasRows)
+                {
+                    Session["UserEmail"] = txtEmail.Text;
+                    lblMessage.Text = "Login successful!";
+                    lblMessage.ForeColor = System.Drawing.Color.Green;
+                    Response.Redirect("Admin/admindashboard.aspx?login=success");
+                }
+                else
+                {
+                    lblMessage.Text = "Invalid email or password!";
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                }
             }
             else
             {
-                lblMessage.Text = "Invalid email or password!";
-                lblMessage.ForeColor = System.Drawing.Color.Red;
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM BB_User WHERE Email = '" + txtEmail.Text + "' AND Password = '" + txtPassword.Text + "'");
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                SqlDataReader sdr = cmd.ExecuteReader();
+                
+                if (sdr.HasRows)
+                {
+                    Session["UserEmail"] = txtEmail.Text;
+                    lblMessage.Text = "Login successful!";
+                    lblMessage.ForeColor = System.Drawing.Color.Green;
+                    Response.Redirect("Homepage.aspx?login=success");
+                }
+                else
+                {
+                    lblMessage.Text = "Invalid email or password!";
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                }
             }
         }
         catch (Exception ex)

@@ -10,37 +10,32 @@
 </head>
 <body>
     <form id="form1" runat="server">
- <div class="container">
-        <div class="reset-password-container">
-            <h2 class="animate-title">Reset Your Password</h2>
-            <p class="tagline">Enter a new password below to reset your password.</p>
+    <div class="reset-password-container">
+        <h2 class="page-title">Reset Your Password</h2>
+        <p class="page-description">Please enter your new password below.</p>
 
-            <asp:Panel ID="ResetPasswordPanel" runat="server" CssClass="password-form">
-                <!-- New Password -->
-                <asp:Label ID="lblNewPassword" runat="server" Text="New Password:" CssClass="form-label"></asp:Label>
-                <asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password" CssClass="input-box" Placeholder="Enter your new password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvNewPassword" runat="server" ControlToValidate="txtNewPassword" ErrorMessage="New password is required!" CssClass="error-message" ForeColor="Red"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="revNewPassword" runat="server" ControlToValidate="txtNewPassword" ErrorMessage="Password must be at least 8 characters with letters and numbers." CssClass="error-message" ValidationExpression="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" ForeColor="Red"></asp:RegularExpressionValidator>
-                <br />
+        <!-- Password Reset Form -->
+        <asp:Panel ID="ResetPasswordPanel" runat="server" CssClass="reset-password-form">
+            <asp:Label ID="lblMessage" runat="server" CssClass="info-message"></asp:Label>
 
-                <!-- Confirm New Password -->
-                <asp:Label ID="lblConfirmPassword" runat="server" Text="Confirm New Password:" CssClass="form-label"></asp:Label>
-                <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="input-box" Placeholder="Confirm your new password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="rfvConfirmPassword" runat="server" ControlToValidate="txtConfirmPassword" ErrorMessage="Confirm password is required!" CssClass="error-message" ForeColor="Red"></asp:RequiredFieldValidator>
-                <asp:CompareValidator ID="cvPassword" runat="server" ControlToCompare="txtNewPassword" ControlToValidate="txtConfirmPassword" ErrorMessage="Passwords do not match!" CssClass="error-message" ForeColor="Red"></asp:CompareValidator>
-                <br />
+            <!-- New Password -->
+            <asp:Label ID="lblNewPassword" runat="server" Text="New Password:" CssClass="input-label"></asp:Label>
+            <asp:TextBox ID="txtNewPassword" runat="server" CssClass="input-field" TextMode="Password" Placeholder="Enter new password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvNewPassword" runat="server" ControlToValidate="txtNewPassword" ErrorMessage="New password is required!" CssClass="error-message" ForeColor="red"></asp:RequiredFieldValidator>
+            <br />
 
-                <!-- Reset Password Button -->
-                <asp:Button ID="btnResetPassword" runat="server" Text="Reset Password" CssClass="btn-submit"/>
-                <br />
-                <asp:Label ID="lblMessage" runat="server" ForeColor="Green" Text=""></asp:Label>
-            </asp:Panel>
+            <!-- Confirm New Password -->
+            <asp:Label ID="lblConfirmPassword" runat="server" Text="Confirm New Password:" CssClass="input-label"></asp:Label>
+            <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="input-field" TextMode="Password" Placeholder="Confirm new password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvConfirmPassword" runat="server" ControlToValidate="txtConfirmPassword" ErrorMessage="Confirm password is required!" CssClass="error-message" ForeColor="red"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="cvPassword" runat="server" ControlToCompare="txtNewPassword" ControlToValidate="txtConfirmPassword" ErrorMessage="Passwords do not match!" CssClass="error-message" ForeColor="red"></asp:CompareValidator>
+            <br />
 
-            <!-- Back to Login Link -->
-            <div class="back-to-login">
-                <a href="Login.aspx" class="back-link">Back to Login</a>
-            </div>
-        </div>
+            <!-- Submit Button -->
+            <asp:Button ID="btnSubmit" runat="server" Text="Reset Password" CssClass="submit-button" />
+            <br />
+            <asp:Label ID="lblSuccessMessage" runat="server" ForeColor="green" Text=""></asp:Label>
+        </asp:Panel>
     </div>
     </form>
 </body>
