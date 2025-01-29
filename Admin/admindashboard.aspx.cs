@@ -16,7 +16,7 @@ public partial class admindashboard : System.Web.UI.Page
         try
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM RAE_User", con);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM BB_User", con);
             int userCount = (int)cmd.ExecuteScalar(); 
             lblTotalUsers.Text = userCount.ToString();
             con.Close();

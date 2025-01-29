@@ -53,7 +53,7 @@ public partial class UserInfo : System.Web.UI.Page
     protected void btnLogout_Click(object sender, EventArgs e)
     {
         Session.Clear();
-        Response.Redirect("homepage.aspx");
+        Response.Redirect("Homepage.aspx");
     }
     protected void btnEditProfile_Click(object sender, EventArgs e)
     {
@@ -83,7 +83,7 @@ public partial class UserInfo : System.Web.UI.Page
 
             if (rowsAffected > 0)
             {
-                Label1.Text = "User information updated successfully.";
+                lblErrorMessage.Text = "User information updated successfully.";
                 txtFullName.ReadOnly = true;
                 txtPhone.ReadOnly = true;
 

@@ -14,6 +14,6 @@ public partial class Content_AdminMasterPage : System.Web.UI.MasterPage
     protected void btnLogout_Click(object sender, EventArgs e)
     {
         Session.Clear();
-        Response.Redirect("Homepage.aspx");
+        Response.Redirect("http://localhost:40412/HotelBlueBay/HomePage.aspx");
     }
 }
