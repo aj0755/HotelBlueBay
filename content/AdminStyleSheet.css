@@ -47,7 +47,7 @@
     color: white;
     padding: 15px;
     display: flex;
-    justify-content: space-between; /* Spaces title and button */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -125,7 +125,7 @@
 
 .card-icon {
     font-size: 30px;
-    color: #ff5722;
+    color: #00ACED;
     margin-bottom: 10px;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .btn-style {
-    background-color: #ff5722;
+    background-color: #00ACED;
     border: none;
     padding: 5px 10px;
     color: white;
@@ -188,7 +188,7 @@
 }
 
 .table-style th {
-    background-color: #ff5722;
+    background-color: #00ACED;
     color: white;
 }
 

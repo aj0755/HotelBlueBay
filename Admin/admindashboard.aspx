@@ -87,5 +87,15 @@
         </div>
     </div>
 </div>
+    <script>
+        // Check if the query string contains login=success
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('login') === 'success') {
+        alertify.set('notifier', 'position', 'top-right');
+            alertify.success('You are successfully logged in!');
+            const newURL = window.location.href.split('?')[0];
+        window.history.replaceState({}, document.title, newURL);
+        }
+    </script>
 </asp:Content>
 
