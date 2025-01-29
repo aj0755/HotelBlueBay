@@ -24,10 +24,10 @@
             <asp:RequiredFieldValidator ID="rfvEmail" runat="server" 
                 ControlToValidate="txtEmail" ErrorMessage="Email is required!" 
                 CssClass="error-message" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="revEmail" runat="server" 
+            <%--<asp:RegularExpressionValidator ID="revEmail" runat="server" 
                 ControlToValidate="txtEmail" ErrorMessage="Enter a valid email address!" 
                 CssClass="error-message" Display="Dynamic" 
-                ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" ForeColor="Red"></asp:RegularExpressionValidator>
+                ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" ForeColor="Red"></asp:RegularExpressionValidator>--%>
             <br />
 
             <!-- Password -->
