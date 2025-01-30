@@ -16,14 +16,27 @@ public partial class admindashboard : System.Web.UI.Page
         try
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM BB_User", con);
-            int userCount = (int)cmd.ExecuteScalar(); 
+            SqlCommand CountUser = new SqlCommand("SELECT COUNT(*) FROM BB_User", con);
+            int userCount = (int)CountUser.ExecuteScalar(); 
             lblTotalUsers.Text = userCount.ToString();
+            SqlCommand CountCat = new SqlCommand("SELECT COUNT(*) FROM BB_Category", con);
+            int CatCount = (int)CountCat.ExecuteScalar();
+            lblTotalCategories.Text = CatCount.ToString();
+            SqlCommand CountRooms = new SqlCommand("SELECT COUNT(*) FROM BB_Rooms", con);
+            int RoomCount = (int)CountRooms.ExecuteScalar();
+            lblTotalProducts.Text = RoomCount.ToString();
+            SqlCommand CountBooking = new SqlCommand("SELECT COUNT(*) FROM BB_Booking", con);
+            int BookingCount = (int)CountBooking.ExecuteScalar();
+            lblTotalOrders.Text = BookingCount.ToString();
             con.Close();
         }
         catch (Exception ex)
         {
             lblErrorMsg.Text = ex.Message;
         }
+    }
+    protected void btnAddCategory_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Admin/admindashboard.aspx");
     }
 }

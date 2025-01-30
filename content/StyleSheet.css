@@ -1685,21 +1685,18 @@ strong {
     font-family: Arial, sans-serif;
 }
 
-/* Room Title */
 .room-title {
     font-size: 32px;
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
-/* Room Description */
 .room-description {
     font-size: 16px;
     color: #7f8c8d;
     margin-bottom: 20px;
 }
 
-/* Image Gallery */
 .room-main-image {
     width: 100%;
     max-width: 700px;
@@ -1722,7 +1719,6 @@ strong {
     cursor: pointer;
 }
 
-/* Room Features */
 .room-features {
     margin-top: 30px;
 }
@@ -1739,7 +1735,6 @@ strong {
     margin-bottom: 8px;
 }
 
-/* Pricing & Booking */
 .room-price {
     font-size: 24px;
     color: #2c3e50;
@@ -1783,7 +1778,6 @@ strong {
     background-color: #2980b9;
 }
 
-/* Reviews */
 .reviews-title {
     font-size: 22px;
     color: #2c3e50;
@@ -1802,9 +1796,76 @@ strong {
     font-style: italic;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .room-details-container {
         width: 90%;
     }
+}
+
+/* Feedback Form Styles */
+.feedback-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #34495e;
+    font-size: 28px;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.form-label {
+    font-size: 18px;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    width:50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+.confirmation-message {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
 }

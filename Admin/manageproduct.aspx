@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="productcontainer">
+    <div class="productcontainer">
             <!-- Header -->
             <div class="productheader">
                 <h2>Add Product</h2>
@@ -17,62 +17,64 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Name</label>
-                    <asp:TextBox ID="txtName" runat="server" CssClass="input-text" placeholder="Enter Name"></asp:TextBox>
+                    <label>Room ID</label>
+                    <asp:TextBox ID="txtName" runat="server" CssClass="input-text" placeholder="Enter Room ID"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
-                    <label>Brand</label>
-                    <asp:TextBox ID="txtNet" runat="server" CssClass="input-text" placeholder="Enter Brand"></asp:TextBox>
-                </div>
-
-                <div class="form-group">
-                    <label>Price</label>
-                    <asp:TextBox ID="txtPrice" runat="server" CssClass="input-text" placeholder="Enter Price"></asp:TextBox>
-                </div>
-
-                <div class="form-group">
-                    <label>Year</label>
-                    <asp:TextBox ID="txtFlavour" runat="server" CssClass="input-text" placeholder="Enter Year"></asp:TextBox>
-                </div>
-
-                <div class="form-group">
-                    <label>FuelType</label>
-                    <asp:TextBox ID="txtContains" runat="server" CssClass="input-text" placeholder="Petrol/Diesel"></asp:TextBox>
+                    <label>Room Number</label>
+                    <asp:TextBox ID="txtNet" runat="server" CssClass="input-text" placeholder="Enter Room Name"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
                     <label>Capacity</label>
-                    <asp:TextBox ID="txtDescription" runat="server" CssClass="input-text" placeholder="Enter Capacity"></asp:TextBox>
+                    <asp:TextBox ID="txtPrice" runat="server" CssClass="input-text" placeholder="Enter Capacity"></asp:TextBox>
                 </div>
 
-                 <div class="form-group">
-                    <label>Transmission</label>
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="input-text" placeholder="Enter Transmission"></asp:TextBox>
+                <div class="form-group">
+                    <label>
+                    Room Type</label>
+                    <asp:TextBox ID="txtFlavour" runat="server" CssClass="input-text" placeholder="Enter Room Type"></asp:TextBox>
                 </div>
 
-                 <div class="form-group">
-                    <label>Mileage</label>
-                    <asp:TextBox ID="TextBox2" runat="server" CssClass="input-text" placeholder="Enter Mileage"></asp:TextBox>
-                </div>
-
-                 <div class="form-group">
-                    <label>Capacity</label>
-                    <asp:TextBox ID="TextBox3" runat="server" CssClass="input-text" placeholder="Enter Capacity"></asp:TextBox>
-                </div>
-
-                 <div class="form-group">
+                <div class="form-group">
                     <label>Status</label>
-                    <asp:TextBox ID="TextBox4" runat="server" CssClass="input-text" placeholder="Enter Status"></asp:TextBox>
+                    <asp:TextBox ID="txtContains" runat="server" CssClass="input-text" placeholder="Avialable/Unavailable"></asp:TextBox>
                 </div>
+
                 <div class="form-group">
-                    <label>Category</label>
-                    <asp:DropDownList ID="ddlCategory" runat="server" CssClass="input-dropdown">
-                        <asp:ListItem Text="-- Select Category --" Value="" />
-                        <asp:ListItem Text="Cakes" Value="Cakes" />
-                        <asp:ListItem Text="Pastries" Value="Pastries" />
-                        <asp:ListItem Text="Cookies" Value="Cookies" />
-                    </asp:DropDownList>
+                    <label>Bed Type</label>
+                    <asp:TextBox ID="txtDescription" runat="server" CssClass="input-text" placeholder="Enter Bed Type"></asp:TextBox>
+                </div>
+
+                 <div class="form-group">
+                    <label>Cleaning status</label>
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="input-text" placeholder="Cleaned/Not Cleaned"></asp:TextBox>
+                </div>
+
+                 <div class="form-group">
+                     <label>
+                     Features</label>
+                     <asp:TextBox ID="TextBox2" runat="server" CssClass="input-text" 
+                         placeholder="Room Features" TextMode="MultiLine"></asp:TextBox>
+                </div>
+
+                 <div class="form-group">
+                    <label>Rate </label>
+&nbsp;<asp:TextBox ID="TextBox3" runat="server" CssClass="input-text" placeholder="Rate Per Night in Rs."></asp:TextBox>
+                </div>
+
+                 <div class="form-group">
+                    &nbsp;<label>Category</label>
+                     <asp:DropDownList ID="ddlCategory" runat="server" CssClass="input-dropdown" 
+                         AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Categoryname" 
+                         DataValueField="Categoryname">
+                         
+                     </asp:DropDownList>
+                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                         SelectCommand="SELECT [Categoryname] FROM [BB_Category]">
+                     </asp:SqlDataSource>
                 </div>
 
                 <div class="form-group">

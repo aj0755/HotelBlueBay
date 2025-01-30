@@ -41,7 +41,7 @@
 
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+        <p><asp:Label ID="lblVisitorCount" runat="server" CssClass="visitor-count-label"></asp:Label></p>
         </asp:ContentPlaceHolder>
     </div>
     <!-- Footer Section -->
@@ -49,6 +49,7 @@
         <div class="footer-container">
         <div class="footer-brand">
             <p>Your Perfect Stay Awaitsts convenient and affordable.</p>
+            
         </div>
 
         <!-- Quick Links -->
