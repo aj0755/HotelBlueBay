@@ -26,19 +26,19 @@
             </div>
             <div class="dashboard-card">
                 <div class="card-body">
-                    <span class="card-icon"><i class="fa-regular fa-cake"></i></span>
+                    <span class="card-icon"><i class="fas fa-bed"></i></span>
                     <div class="card-info">
                         <asp:Label ID="lblTotalProducts" runat="server" CssClass="card-count" Text="0"></asp:Label>
-                        <span>Total Products</span>
+                        <span>Total Rooms</span>
                     </div>
                 </div>
             </div>
             <div class="dashboard-card">
                 <div class="card-body">
-                    <span class="card-icon"><i class="fa-solid fa-cart-arrow-down"></i></span>
+                    <span class="card-icon"><i class="fas fa-calendar-check"></i></span>
                     <div class="card-info">
                         <asp:Label ID="lblTotalOrders" runat="server" CssClass="card-count" Text="0"></asp:Label>
-                        <span>Total Orders</span>
+                        <span>Total Booking</span>
                     </div>
                 </div>
             </div>
@@ -72,15 +72,23 @@
             <div class="dashboard-section">
                 <div class="section-header">
                     <h4>Active Categories</h4>
-                    <asp:Button ID="btnAddCategory" runat="server" CssClass="btn-style" Text="Add Category"/>
+                    <asp:Button ID="btnAddCategory" runat="server" CssClass="btn-style" 
+                        Text="Add Category" onclick="btnAddCategory_Click"/>
                 </div>
                 <div class="section-body">
-                    <asp:GridView ID="gvCategories" runat="server" CssClass="table-style" AutoGenerateColumns="false">
+                    <asp:GridView ID="gvCategories" runat="server" CssClass="table-style" 
+                        AutoGenerateColumns="False" DataKeyNames="Category_ID" 
+                        DataSourceID="SqlDataSource2">
                         <Columns>
-                            <asp:BoundField DataField="CategoryName" HeaderText="Category Name" />
-                            <asp:BoundField DataField="CreateOn" HeaderText="Create Date" />
+                            <asp:BoundField DataField="Category_ID" HeaderText="Category_ID" 
+                                ReadOnly="True" SortExpression="Category_ID" />
+                            <asp:BoundField DataField="Categoryname" HeaderText="Categoryname" 
+                                SortExpression="Categoryname" />
                         </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT * FROM [BB_Category]"></asp:SqlDataSource>
                     <asp:Label ID="lblErrorMsg" runat="server"></asp:Label>
                 </div>
             </div>

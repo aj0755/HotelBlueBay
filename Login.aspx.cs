@@ -33,7 +33,7 @@ public partial class Login : System.Web.UI.Page
                     Session["UserEmail"] = txtEmail.Text;
                     lblMessage.Text = "Login successful!";
                     lblMessage.ForeColor = System.Drawing.Color.Green;
-                    Response.Redirect("http://localhost:40412/HotelBlueBay/Admin/admindashboard.aspx?login=success");
+                    Response.Redirect("Admin/admindashboard.aspx?login=success");
                 }
                 else
                 {

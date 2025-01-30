@@ -36,7 +36,7 @@ public partial class ChangePassword : System.Web.UI.Page
                     if (count == 1)
                     {
                         SqlCommand updatePasswordCmd = new SqlCommand(
-                            "UPDATE RAE_User SET Password = '"+newPassword+"' WHERE Email = '"+email+"'", con);
+                            "UPDATE BB_User SET Password = '"+newPassword+"' WHERE Email = '"+email+"'", con);
 
                         int rowsAffected = updatePasswordCmd.ExecuteNonQuery();
 

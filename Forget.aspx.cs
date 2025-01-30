@@ -26,7 +26,7 @@ public partial class Forget : System.Web.UI.Page
 
         try
         {
-            string resetLink = "http://localhost:50714/BlueBayweb/Login.aspx";
+            string resetLink = "http://localhost:62278/HotelBlueBay/ResetPassword.aspx";
 
             string smtpAddress = "smtp.gmail.com";
             int portNumber = 587;
