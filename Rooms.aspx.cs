@@ -11,4 +11,19 @@ public partial class Rooms : System.Web.UI.Page
     {
 
     }
+    protected void btnDeluxeRoom_Click(object sender, EventArgs e)
+    {
+        Session["RoomType"] = "Deluxe";
+        Response.Redirect("RoomDetails.aspx");
+    }
+    protected void btnExecutiveRoom_Click(object sender, EventArgs e)
+    {
+        Session["RoomType"] = "Executive";
+        Response.Redirect("RoomDetails.aspx");
+    }
+    protected void btnPresidentialSuite_Click(object sender, EventArgs e)
+    {
+        Session["RoomType"] = "Presidential";
+        Response.Redirect("RoomDetails.aspx");
+    }
 }

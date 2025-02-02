@@ -22,7 +22,8 @@
             <h3>Deluxe Room</h3>
             <p>Enjoy spacious comfort with city views, king-sized bed, and a luxurious bathroom and balcony.</p>
             <p class="price">Rs.3500 per night</p>
-            <asp:Button ID="btnDeluxeRoom" runat="server" Text="Book Now" CssClass="cta-button"  />
+            <asp:Button ID="btnDeluxeRoom" runat="server" Text="View Details" 
+                CssClass="cta-button" onclick="btnDeluxeRoom_Click"  />
         </div>
 
         <!-- Executive Suite -->
@@ -31,7 +32,8 @@
             <h3>Executive Suite</h3>
             <p>This suite features a private balcony, living area, and top-notch amenities for ultimate relaxation.</p>
             <p class="price">Rs.2500 per night</p>
-            <asp:Button ID="btnExecutiveRoom" runat="server" Text="Book Now" CssClass="cta-button" />
+            <asp:Button ID="btnExecutiveRoom" runat="server" Text="View Details" 
+                CssClass="cta-button" onclick="btnExecutiveRoom_Click" />
         </div>
 
         <!-- Presidential Suite -->
@@ -40,7 +42,8 @@
             <h3>Presidential Suite</h3>
             <p>Our most luxurious room with a private pool, panoramic city views, and a dedicated concierge.</p>
             <p class="price">Rs.5000 per night</p>
-            <asp:Button ID="btnPresidentialSuite" runat="server" Text="Book Now" CssClass="cta-button"  />
+            <asp:Button ID="btnPresidentialSuite" runat="server" Text="View Details" 
+                CssClass="cta-button" onclick="btnPresidentialSuite_Click"  />
         </div>
     </section>
 
