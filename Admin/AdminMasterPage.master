@@ -29,19 +29,19 @@
                 </div>
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="admindashboard.aspx"><i class="fas fa-home"></i> Dashboard</a>
+                        <a href="Dashboard.aspx"><i class="fas fa-home"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="adminmanageuser.aspx"><i class="fas fa-users"></i> Manage Users</a>
+                        <a href="ManageUser.aspx"><i class="fas fa-users"></i> Manage Users</a>
                     </li>
                     <li>
-                        <a href="adminmanagecategory.aspx"><i class="fas fa-list"></i> Category Master</a>
+                        <a href="ManageCategory.aspx"><i class="fas fa-list"></i> Category Master</a>
                     </li>
                     <li>
-                        <a href="manageproduct.aspx"><i class="fas fa-bed"></i> Rooms Master</a>
+                        <a href="ManageRooms.aspx"><i class="fas fa-bed"></i> Rooms Master</a>
                     </li>
                     <li>
-                        <a href="OrderMaster.aspx"><i class="fas fa-calendar-check"></i> Booking Master</a>
+                        <a href="ManageBooking.aspx"><i class="fas fa-calendar-check"></i> Booking Master</a>
                     </li>
                 </ul>
             </nav>

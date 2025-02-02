@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="adminmanagecategory.aspx.cs" Inherits="Content_adminmanagecategory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="ManageCategory.aspx.cs" Inherits="Admin_ManageCategory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -11,21 +11,21 @@
         <!-- Add Category Form -->
         <div class="add-category-form">
             <asp:TextBox ID="txtCategoryName" runat="server" CssClass="input-text" Placeholder="Enter Category Name"></asp:TextBox>
-            <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="btn-add" />
+            <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="btn-add" 
+                onclick="btnAdd_Click" />
+            <br />
+            <asp:Label ID="lblMesage" runat="server"></asp:Label>
         </div>
 
         <!-- Category Table -->
         <div class="table-container">
         <asp:GridView ID="gvCategories" runat="server" CssClass="category-table"
-            AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+            AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="CategoryName" >
             <Columns>
                 <asp:TemplateField HeaderText="Action">
                     <ItemTemplate>
-                        <asp:LinkButton ID="btnEdit" runat="server" CssClass="edit-btn">
-                            <i class="fa fa-edit"></i>
-                        </asp:LinkButton>
-                        <asp:LinkButton ID="btnDelete" runat="server" CssClass="delete-btn">
-                            <i class="fa fa-trash"></i>
+                        <asp:LinkButton ID="btnDelete" runat="server" CssClass="delete-btn" OnClick="btnDelete_Click" OnClientClick="return confirm('Are you sure you want to delete this category?');">
+                            <i class="fa fa-trash"> </i>
                         </asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
@@ -34,12 +34,11 @@
             </Columns>
         </asp:GridView>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-            SelectCommand="SELECT Category_ID, CategoryName FROM BB_Category">
-        </asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                SelectCommand="SELECT [Categoryname] FROM [BB_Category]">
+            </asp:SqlDataSource>
     </div>
 </div>
-
 </asp:Content>
 

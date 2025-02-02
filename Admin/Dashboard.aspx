@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="admindashboard.aspx.cs" Inherits="admindashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Dashboard.aspx.cs" Inherits="Dashboard" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="dashboard-container">
+<div class="dashboard-container">
     <div class="dashboard-content">
         <div class="dashboard-row">
             <div class="dashboard-card">
@@ -92,6 +92,50 @@
                     <asp:Label ID="lblErrorMsg" runat="server"></asp:Label>
                 </div>
             </div>
+             <div class="dashboard-section">
+                <div class="section-header">
+                    <h4>Active Rooms</h4>
+                    <asp:Button ID="btnAddRooms" runat="server" CssClass="btn-style" 
+                        Text="Add Rooms" onclick="btnAddRooms_Click" />
+                </div>
+                <div class="section-body">
+                    <asp:GridView ID="gvRooms" runat="server" CssClass="table-style" 
+                        AutoGenerateColumns="False" DataKeyNames="Room_ID" 
+                        DataSourceID="SqlDataSource3">
+                        <Columns>
+                            <asp:BoundField DataField="Room_ID" HeaderText="Room_ID" ReadOnly="True" 
+                                SortExpression="Room_ID" />
+                            <asp:BoundField DataField="Rno" HeaderText="Rno" SortExpression="Rno" />
+                            <asp:TemplateField HeaderText="Images">
+                                <ItemTemplate>
+                                    <asp:Image ID="imgRoom" runat="server" 
+                                               ImageUrl='<%# Eval("Images") %>' 
+                                               CssClass="room-image" 
+                                               Width="100" Height="100" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:BoundField DataField="Capacity" HeaderText="Capacity" 
+                                SortExpression="Capacity" />
+                            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+                            <asp:BoundField DataField="Status" HeaderText="Status" 
+                                SortExpression="Status" />
+                            <asp:BoundField DataField="Bedtype" HeaderText="Bedtype" 
+                                SortExpression="Bedtype" />
+                            <asp:BoundField DataField="Clean_Status" HeaderText="Clean_Status" 
+                                SortExpression="Clean_Status" />
+                            <asp:BoundField DataField="Features" HeaderText="Features" 
+                                SortExpression="Features" />
+                            <asp:BoundField DataField="Ratepernight" HeaderText="Ratepernight" 
+                                SortExpression="Ratepernight" />
+                        </Columns>
+                     
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT * FROM [BB_Rooms]"></asp:SqlDataSource>
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -105,5 +149,6 @@
         window.history.replaceState({}, document.title, newURL);
         }
     </script>
+
 </asp:Content>
 

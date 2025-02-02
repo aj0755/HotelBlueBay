@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-public partial class admindashboard : System.Web.UI.Page
+public partial class Dashboard : System.Web.UI.Page
 {
     SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["con"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
@@ -17,7 +17,7 @@ public partial class admindashboard : System.Web.UI.Page
         {
             con.Open();
             SqlCommand CountUser = new SqlCommand("SELECT COUNT(*) FROM BB_User", con);
-            int userCount = (int)CountUser.ExecuteScalar(); 
+            int userCount = (int)CountUser.ExecuteScalar();
             lblTotalUsers.Text = userCount.ToString();
             SqlCommand CountCat = new SqlCommand("SELECT COUNT(*) FROM BB_Category", con);
             int CatCount = (int)CountCat.ExecuteScalar();
@@ -37,6 +37,10 @@ public partial class admindashboard : System.Web.UI.Page
     }
     protected void btnAddCategory_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Admin/admindashboard.aspx");
+        Response.Redirect("ManageCategory.aspx");
+    }
+    protected void btnAddRooms_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("ManageRooms.aspx");
     }
 }

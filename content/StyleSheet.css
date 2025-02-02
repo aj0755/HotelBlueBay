@@ -588,12 +588,11 @@ header {
 .user-avatar {
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* Circular avatar */
-    border: 2px solid #fff; /* Border for avatar */
-    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50%; 
+    border: 2px solid #fff;
+    cursor: pointer; 
 }
 
-/* Style for the user icon container */
 .user-icon {
     display: inline-block;
     cursor: pointer;
@@ -1173,7 +1172,6 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Category Visibility */
 .rooms, .amenities, .dining, .pool {
     display: block;
 }
@@ -1181,7 +1179,7 @@ h1 {
 .hidden {
     display: none;
 }
-/* p&p*/
+
 /* Terms and Privacy Container */
 .terms-privacy-container {
     width: 80%;
@@ -1202,16 +1200,15 @@ h1 {
     color: #2c3e50;
     font-size: 36px;
     font-weight: 700;
-    animation: slideInUp 1s ease-out; /* Slide-in animation for title */
+    animation: slideInUp 1s ease-out; 
 }
 
-/* Section Titles */
 h2 {
     color: #3498db;
     font-size: 28px;
     margin-bottom: 20px;
     opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards; /* Fade-in and slide-up effect */
+    animation: fadeInUp 1.5s ease-out forwards; 
 }
 
 h3 {
@@ -1220,11 +1217,10 @@ h3 {
     margin-top: 20px;
     margin-bottom: 10px;
     opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards; /* Fade-in and slide-up effect */
+    animation: fadeInUp 1.5s ease-out forwards;
     animation-delay: 0.5s; /* Delay for subsequent headers */
 }
 
-/* Paragraph Styling */
 p {
     font-size: 16px;
     color: #555;
@@ -1235,7 +1231,6 @@ p {
     animation-delay: 1s; /* Delay for text */
 }
 
-/* Links Styling */
 a {
     color: #3498db;
     text-decoration: none;
@@ -1243,18 +1238,16 @@ a {
 }
 
 a:hover {
-    color: #2980b9; /* Change color on hover */
+    color: #2980b9; 
     text-decoration: underline;
 }
 
-/* Hover Effects for Sections */
 .terms-section:hover, .privacy-section:hover {
     background-color: #ecf0f1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
-/* Animation for Fade-In */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1264,7 +1257,6 @@ a:hover {
     }
 }
 
-/* Animation for Slide-In Up (for title) */
 @keyframes slideInUp {
     from {
         transform: translateY(-50px);
@@ -1276,7 +1268,6 @@ a:hover {
     }
 }
 
-/* Animation for Fade-In Up (for section headers and paragraphs) */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1288,7 +1279,6 @@ a:hover {
     }
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .terms-privacy-container {
         width: 90%;
@@ -1551,9 +1541,16 @@ a:hover {
     padding: 20px;
 }
 
-.payment-options,
-.order-details {
+.payment-options{
     background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.order-details {
+    background-color: #5b7d9d;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1570,44 +1567,76 @@ a:hover {
 
 h2 {
     margin-bottom: 15px;
+    font-size: 26px; 
+}
+
+.order-details {
+    background-color: #5b7d9d;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 48%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #2c3e50;
 }
 
 .order-details p {
-    margin: 5px 0;
+    margin: 12px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #ecf0f1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
 }
 
 strong {
     font-weight: bold;
+    width: 50%;
+    text-align: left;
+    color: #ffffff;
 }
 
-#confirm-btn {
-    background-color: #4CAF50;
+.order-details span, .order-details label {
+    width: 50%;
+    text-align: right;
+    font-weight: 500;
+    color: #ffcccb;
+}
+
+.confirm-button {
+    background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 15px;
-}
-
-#confirm-btn:hover {
-    background-color: #45a049;
-}
-
-/* Center the confirm button */
-.order-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#confirm-btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     text-align: center;
+    transition: 0.3s;
 }
-/*Galary page 2*/
+
+.confirm-button:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+}
+
 /* Gallery Container */
 .container {
     width: 80%;
@@ -1618,7 +1647,6 @@ strong {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Gallery Title */
 .gallery-title {
     font-size: 32px;
     color: #34495e;
@@ -1626,7 +1654,6 @@ strong {
     margin-bottom: 10px;
 }
 
-/* Gallery Description */
 .gallery-description {
     text-align: center;
     font-size: 16px;
@@ -1634,14 +1661,12 @@ strong {
     margin-bottom: 30px;
 }
 
-/* Gallery Grid Layout */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Gallery Item Styling */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -1656,149 +1681,162 @@ strong {
     transition: transform 0.3s ease;
 }
 
-/* Image Hover Effect */
 .gallery-item:hover .gallery-img {
     transform: scale(1.05);
 }
 
-/* Lightbox Styling */
 .lightbox {
     display: block;
     position: relative;
 }
 
-/* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .container {
         width: 90%;
     }
 
 }
+
 /*Room detail page css*/
 .room-details-container {
     width: 80%;
     margin: 50px auto;
     padding: 40px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
 .room-title {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: bold;
     color: #2c3e50;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.room-description {
-    font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 20px;
+.room-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .room-main-image {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.room-thumbnails {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.features-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
 }
 
-.room-thumbnail {
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
-    cursor: pointer;
+.feature-list {
+    list-style: none;
+    padding: 0;
 }
 
-.room-features {
-    margin-top: 30px;
-}
-
-.room-features .input-label {
+.feature-list li {
     font-size: 18px;
     color: #34495e;
-    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.room-features .room-feature {
-    font-size: 16px;
-    color: #34495e;
-    margin-bottom: 8px;
+.price-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 10px;
 }
 
 .room-price {
     font-size: 24px;
-    color: #2c3e50;
+    color: #e74c3c;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .input-label {
-    font-size: 14px;
-    color: #34495e;
-    text-align: left;
-    margin-bottom: 5px;
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .input-field {
     width: 100%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
     border-radius: 6px;
     font-size: 16px;
     background-color: #f9f9f9;
+    transition: 0.3s;
 }
 
 .input-field:focus {
     border-color: #3498db;
     outline: none;
+    background-color: #ecf0f1;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .btn-book-now {
     width: 100%;
+    max-width: 250px;
     padding: 14px;
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .btn-book-now:hover {
-    background-color: #2980b9;
-}
-
-.reviews-title {
-    font-size: 22px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.review-text {
-    font-size: 16px;
-    color: #34495e;
-    margin-bottom: 10px;
-}
-
-.reviewer-name {
-    font-size: 14px;
-    color: #7f8c8d;
-    font-style: italic;
+    background-color: #217dbb;
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .room-details-container {
-        width: 90%;
+        width: 95%;
+        padding: 30px;
+    }
+
+    .room-title {
+        font-size: 28px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .btn-book-now {
+        width: 100%;
     }
 }
 
