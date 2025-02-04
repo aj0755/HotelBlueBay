@@ -117,8 +117,8 @@ public partial class RoomDetails : System.Web.UI.Page
     }
     protected void btnBookNow_Click(object sender, EventArgs e)
     {
-        //try
-        //{
+        try
+        {
             string roomTitle = lblRoomTitle.Text;
             string pricestr = lblPrice.Text.Replace("Price: ₹", "").Replace(" per night", "").Trim();
             decimal price = Convert.ToDecimal(pricestr);
@@ -168,10 +168,10 @@ public partial class RoomDetails : System.Web.UI.Page
             Icmd.ExecuteNonQuery();
             con.Close();
             Response.Redirect("Payment.aspx");
-        //}
-        //catch (Exception ex)
-        //{
-        //    lblMessage.Text = ex.Message;
-        //}
+        }
+        catch (Exception ex)
+        {
+            lblMessage.Text = ex.Message;
+        }
     }
 }

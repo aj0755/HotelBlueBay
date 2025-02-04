@@ -10,13 +10,14 @@
         <!-- Gallery Grid -->
         <div class="gallery-grid">
             <div class="gallery-item">
-                <a href="Images/room1.jpg" class="lightbox">
-                    <img src="Images/room1.jpg" alt="Room 1" class="gallery-img" />
+                <a href="Images/DeluxeRoom.jpg" class="lightbox">
+                    <img src="Images/DeluxeRoom.jpg" alt="Room 1" class="gallery-img" />
                 </a>
             </div>
+            
             <div class="gallery-item">
-                <a href="Images/room2.jpg" class="lightbox">
-                    <img src="Images/room2.jpg" alt="Room 2" class="gallery-img" />
+                <a href="Images/PresidentalRoom.jpg" class="lightbox">
+                    <img src="Images/PresidentalRoom.jpg" alt="Room 2" class="gallery-img" />
                 </a>
             </div>
             <div class="gallery-item">
@@ -24,14 +25,16 @@
                     <img src="Images/amenity1.jpg" alt="Amenity 1" class="gallery-img" />
                 </a>
             </div>
+            
             <div class="gallery-item">
-                <a href="Images/restaurant.jpg" class="lightbox">
-                    <img src="Images/restaurant.jpg" alt="Restaurant" class="gallery-img" />
+                <a href="Images/Dining.jpg" class="lightbox">
+                    <img src="Images/Dining.jpg" alt="Restaurant" class="gallery-img" />
                 </a>
             </div>
+            
             <div class="gallery-item">
-                <a href="Images/pool.jpg" class="lightbox">
-                    <img src="Images/pool.jpg" alt="Pool" class="gallery-img" />
+                <a href="Images/swimming-pool.jpg" class="lightbox">
+                    <img src="Images/swimming-pool.jpg" alt="Pool" class="gallery-img" />
                 </a>
             </div>
             <div class="gallery-item">

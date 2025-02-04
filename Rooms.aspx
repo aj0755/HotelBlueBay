@@ -47,25 +47,5 @@
         </div>
     </section>
 
-    <!-- Availability Section -->
-    <section class="room-availability">
-        <h2>Check Room Availability</h2>
-        <div>
-            <label for="txtCheckIn">Check-In Date:</label>
-            <asp:TextBox ID="txtCheckIn" runat="server" CssClass="input-control" TextMode="Date" />
-        </div>
-        <div>
-            <label for="txtCheckOut">Check-Out Date:</label>
-            <asp:TextBox ID="txtCheckOut" runat="server" CssClass="input-control" TextMode="Date" />
-        </div>
-        <div>
-            <asp:Button ID="btnCheckAvailability" runat="server" Text="Check Availability" CssClass="cta-button"  />
-        </div>
-
-        <div class="availability-message">
-            <asp:Label ID="lblAvailabilityMessage" runat="server" ForeColor="Green" Visible="false" />
-        </div>
-    </section>
-
 </asp:Content>
 
