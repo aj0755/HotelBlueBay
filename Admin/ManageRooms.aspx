@@ -94,14 +94,14 @@
                 <asp:BoundField DataField="Room_ID" HeaderText="Room_ID" 
                     SortExpression="Room_ID" ReadOnly="True" />
                 <asp:BoundField DataField="Rno" HeaderText="Rno" SortExpression="Rno" />
-            <asp:TemplateField HeaderText="Images">
-                <ItemTemplate>
-                    <asp:Image ID="imgRoom" runat="server" 
-                               ImageUrl='<%# Eval("Images") %>' 
-                               CssClass="room-image" 
-                               Width="100" Height="100" />
-                </ItemTemplate>
-            </asp:TemplateField>
+                <asp:TemplateField HeaderText="Images">
+                    <ItemTemplate>
+                        <asp:Image ID="imgRoom" runat="server" 
+                                   ImageUrl='<%# Eval("Images") %>' 
+                                   CssClass="room-image" 
+                                   Width="100" Height="100" />
+                    </ItemTemplate>
+                </asp:TemplateField>
                 <asp:BoundField DataField="Capacity" HeaderText="Capacity" 
                     SortExpression="Capacity" />
                 <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
