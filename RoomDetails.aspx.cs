@@ -17,7 +17,7 @@ public partial class RoomDetails : System.Web.UI.Page
         {
             if (!IsPostBack) 
             {
-                if ("Deluxe" == Session["RoomType"])
+                if (Session["RoomType"] == "Deluxe")
                 {
                     con.Open();
                     SqlCommand cmd = new SqlCommand("SELECT * FROM BB_Rooms WHERE Room_ID = 'DR1'");
